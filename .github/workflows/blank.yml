@@ -34,4 +34,6 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy --override-arch=arm64 -override-os=linux docker://docker.io/nginxinc/nginx-unprivileged docker://registry.cn-beijing.aliyuncs.com/cuijx/nginx-unprivileged:arm64
+        skopeo copy \
+            --override-arch=arm64 \
+            --override-os=linux \ docker://docker.io/nginxinc/nginx-unprivileged docker://registry.cn-beijing.aliyuncs.com/cuijx/nginx-unprivileged:arm64
