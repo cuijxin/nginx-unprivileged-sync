@@ -36,6 +36,6 @@ jobs:
         #!/usr/bin/env bash
         skopeo copy \
             --override-arch=arm64 \
-            --override-os=linux \ 
+            --override-os=linux \
             docker://docker.io/nginx:stable-alpine3.21 \
             docker://registry.cn-beijing.aliyuncs.com/cuijx/nginx:stable-alpine3.21
